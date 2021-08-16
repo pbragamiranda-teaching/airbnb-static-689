@@ -1,0 +1,8 @@
+<h1>Flats - Batch 689</h1>
+
+<% @flats.each do |flat| %>
+	<!-- link_to ANCHOR_TEXT, ANCHOR_PATH -->
+	<p><%= link_to flat['name'], flat_path(flat['id']) %></p>
+	<p><%= flat['price'] %>-<%= flat['priceCurrency'] %></p>
+	
+<% end %>
